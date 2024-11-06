@@ -3,57 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title></title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div>
-    <div>
-      <svg></svg>
-      <p></p>
+  <div class="container-main grid">
+    <aside class="menu">
+      <div class="logo">
+        <i class="icon-dashboard fa-th-large"></i>Dashboard
+      </div>
+      <nav>
+        <ul>
+          <li class="home"><a href="#"><i class="icon-home fa-solid fa-house"></i>Home</a></li>
+          <li><a href="#"><i class="icon-profile fa-solid fa-user"></i>Profile</a></li>
+          <li><a href="#"><i class="icon-message fa-solid fa-message"></i>Messages</a></li>
+          <li><a href="#"><i class="icon-history fa-solid fa-clock-rotate-left"></i>History</a></li>
+          <li><a href="#"><i class="icon-tasks fa-solid fa-list-check"></i>Tasks</a></li>
+          <li><a href="#"><i class="icon-communities fa-solid fa-users"></i>Communities</a></li>
+          <li class="setting"><a href="#"><i class="icon-setting fa-solid fa-gear"></i>Setting</a></li>
+          <li><a href="#"><i class="icon-support fa-solid fa-phone"></i>Support</a></li>
+          <li><a href="#"><i class="icon-privacy fa-solid fa-shield"></i>Privacy</a></li>
+        </ul> 
+      </nav>
+    </aside>
+
+    <div class="top-panel grid">
+      <div class="container-search">
+        <form action="#">
+          <input type="search" name="search" id="search">
+          <button type="submit">
+            <i class="icon-search fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="container-profile flex">
+        <i class="icon-notification fa-solid fa-bell"></i>
+        <img src="./images/avatar.jpeg" alt="Profile" class="picture-profile">
+        <a href="#">
+          <span class="user-name">Morgan Oakley</span>
+        </a>
+      </div>
+      <div class="container-hello">
+        <img src="" alt="">
+        <p>Hi there,</p>
+        <p>Morgan Oakley (@morgan)</p>
+      </div>
+      <div class="container-actions">
+        <ul class="grid">
+          <li><button class="btn">New</button></li>
+          <li><button class="btn">Upload</button></li>
+          <li><button class="btn">Share</button></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <div>
-        <svg></svg>
-        <p></p>
+
+    <div class="container-body grid">
+      
+      <div class="container-projects grid">
+         <h3 class="projects">Your Projects</h3>
+        <div class="project-card">
+          <h4 class="project-name">Super Cool Project</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam ducimus molestias at. Optio ex molestias laboriosam! Alias nesciunt, est consequuntur architecto deleniti omnis pariatur nisi libero repudiandae excepturi porro.</p>
+          <div class="actions-card"></div>
+        </div>
+        <div class="project-card">
+          <h4 class="project-name">Less Cool Project</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio accusantium ut eligendi, vel nobis esse eius, ipsam et doloribus quae itaque libero? Doloribus quidem minus tempore reiciendis, repellendus eligendi culpa.</p>
+          <div class="actions-card"></div>
+        </div>
+        <div class="project-card">
+          <h4 class="project-name">Impossible App</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis neque veritatis molestiae autem reprehenderit, nihil voluptatum quos similique? Pariatur nostrum accusantium dicta saepe iure animi possimus ex quod corrupti neque.</p>
+          <div class="actions-card"></div>
+        </div>
+        <div class="project-card">
+          <h4 class="project-name">Easy Peasy App</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus ratione? Eum nostrum reprehenderit tenetur facere reiciendis eius sapiente aperiam possimus, error similique nobis quod numquam quisquam dolorum velit nulla!</p>
+          <div class="actions-card"></div>
+        </div>
+        <div class="project-card">
+          <h4 class="project-name">Ad Blocker</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis nisi, autem exercitationem laboriosam saepe tempora deleniti voluptate vel dignissimos aut veniam minus facere nesciunt ex corrupti similique neque suscipit?</p>
+          <div class="actions-card"></div>
+        </div>
+        <div class="project-card">
+          <h4 class="project-name">Money Maker</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo veniam quam accusamus amet aspernatur eum, dolor, quibusdam magni tenetur cum enim, ab fuga. Earum quos quidem ea praesentium ut?</p>
+          <div class="actions-card"></div>
+        </div>
       </div>
-      <div>
-        <svg></svg>
-        <p></p>
+
+      <div class="container-announcements">
+        <h3>Announcement</h3>
+        <div class="announcement-card">
+          <h5 class="announcement-title">Site Maintenance</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore neque maxime explicabo, necessitatibus aperiam eos esse expedita suscipit! Saepe libero culpa soluta officiis dolorum neque amet error commodi corporis assumenda?</p>
+        </div>
+        <div class="announcement-card">
+          <h5 class="announcement-title">Commnunity Share Day</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda labore cumque saepe modi debitis! Velit quas animi fuga dolores explicabo sequi. Porro unde omnis sequi cupiditate a perferendis dignissimos? Cumque?</p>
+        </div>
+        <div class="announcement-card">
+          <h5 class="announcement-title">Updated Privacy Policy</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus repudiandae iure placeat porro veniam alias quis velit iste, cupiditate incidunt dolor architecto amet consectetur dolorem iusto aperiam, quia laborum?</p>
+        </div>
       </div>
-      <div>
-        <svg></svg>
-        <p></p>
+      
+      <div class="container-trending">
+        <h3>Trending</h3>
+        <div>
+          <img src="" alt="">
+          <p>@tegan</p>
+          <p>World Peace Builder</p>
+        </div>
+        <div>
+          <img src="" alt="">
+          <p>@morgan</p>
+          <p>Super Cool Project</p>
+        </div>
+        <div>
+          <img src="" alt="">
+          <p>@kendall</p>
+          <p>Life Changing App</p>
+        </div>
+        <div>
+          <img src="" alt="">
+          <p>@alex</p>
+          <p>No Traffic Maker</p>
+        </div>
       </div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
-      <div>
-        <svg></svg>
-        <p></p>
-      </div>
+
     </div>
   </div>
-  <div></div>
-  <div></div>
 </body>
 </html>
